@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter a number: ");
+        int num = scanner.nextInt();
+
+
+        System.out.println("Factorial of number " + num + " is " + factorial(num));
+    }
+
+    static int factorial(int num) {
+
+        int fact = 1;
+        for(int i=1; i<=num; i++) {
+            fact *= i;
+        }
+
+        return fact;
+    }
+}
